@@ -1,9 +1,8 @@
-# backend/api.py
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
-import os # 
+import os
 
 # --- Configuration ---
 script_dir = os.path.dirname(os.path.abspath(__file__))
