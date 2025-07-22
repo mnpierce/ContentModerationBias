@@ -53,3 +53,13 @@ Note: We will first try to train with only data with attached demographic labels
 
 ## Jupyter Notebook walkthrough with results visualization and bias data
 1. Run `Content_Moderation.ipynb`
+
+## NPM Setup
+1. Download Node.js
+2. `npm install -D tailwindcss postcss autoprefixer` (configuration already done in repository)
+3. `npm install`
+4. `npm install --save-dev tsx`
+5. `npm install -D @tailwindcss/postcss`
+6. `npm run dev`
+
+Note: also run `api.py` simultaneously to start web app (requires `pip install Flask flask-cors`)
