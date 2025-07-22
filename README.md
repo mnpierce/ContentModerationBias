@@ -1,7 +1,14 @@
 # Content Moderation: Using Machine Learning to Classify Toxic Comments with Bias Analysis
 CSE3000 - Final Project  
 Course Instructor: Rye Howard-Stone  
-Group Members: Alex Reilly, Andrew Khan, Matt Pierce, Wes Deal  
+Group Members: Matt Pierce, Alex Reilly, Andrew Khan, Wes Deal  
+
+**_While this was a group project, I was the sole contributor to this codebase. I also developed the frontend separately after the course was over._**
+
+
+<img width="825" height="822" alt="toxic_demo" src="https://github.com/user-attachments/assets/beae3dd9-1ccc-49d4-899c-b1027b380b19" />
+<img width="824" height="816" alt="nontoxic_demo" src="https://github.com/user-attachments/assets/07262540-1d89-4351-856d-dc38cecff331" />
+<img width="561" height="754" alt="content_moderation_bias" src="https://github.com/user-attachments/assets/5a3b6539-929a-457a-adb0-36f41156d361" />
 
 ## About the Data Source: Civil Comments (Platform)
 
@@ -46,7 +53,7 @@ Note: We will first try to train with only data with attached demographic labels
 0. Download all required libraries listed in `requirements.txt` (RECOMMENDED: Python 3.12)
 1. Start with `full_train.csv`
 2. Run `data_trim.py` to create `trimmed_train.csv`
-    - `trimmed_train.csv` is all you need to run `trainer_bert.py`
+    - `trimmed_train.csv` is all you need to run `trainer_bert.py` (given sufficient hardware and setup)
 3. Run `tokenize_text.py` to create `tokenized_train.csv`
     - This csv is also provided to you so you can skip these steps 
 4. Run `baseline_models.py` to train and evaluate Log. Reg., NB models
@@ -54,12 +61,11 @@ Note: We will first try to train with only data with attached demographic labels
 ## Jupyter Notebook walkthrough with results visualization and bias data
 1. Run `Content_Moderation.ipynb`
 
-## NPM Setup
+## NPM Setup Quick Tips
 1. Download Node.js
-2. `npm install -D tailwindcss postcss autoprefixer` (configuration already done in repository)
-3. `npm install`
-4. `npm install --save-dev tsx`
-5. `npm install -D @tailwindcss/postcss`
-6. `npm run dev`
+2. `npm install`
 
-Note: also run `api.py` simultaneously to start web app (requires `pip install Flask flask-cors`)
+## Interactive Web Demo
+1. Move to `backend`, run `api.py`
+2. In separate terminal, move to `frontend`, run `npm run dev`
+3. Open localhost
